@@ -1,0 +1,42 @@
+name: "Feature request"
+description: "File a Feature request"
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out a feature request!
+  - type: textarea
+    id: context
+    attributes:
+      label: Context / Background / How This Idea Came To Fruition
+      description: Please provide some context around your idea
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / Opportunity
+      description: What are we trying to solve/improve with this feature?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution / How It Can Be Improved
+      description: What will your feature / enhancement look like?  (i.e frontend changes should have accompanying screenshots around the solution)
+    validations:
+      required: true
+  - type: textarea
+    id: testing
+    attributes:
+      label: Testing the changes
+      description: Please provide a high level description of how you'll verify your changes work and won't break existing functionality?
+    validations:
+      required: true
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Please provide any additional information around your request here

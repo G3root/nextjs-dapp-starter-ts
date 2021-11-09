@@ -1,0 +1,61 @@
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true
+  - type: textarea
+    id: repo-steps
+    attributes:
+      label: How to reproduce the bug?
+      description: Please explain how to reproduce the bug
+      placeholder: Tell us how to repo the bug!
+      value: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+  - type: "checkboxes"
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
+      options:
+        - label: Firefox
+        - label: Chrome
+        - label: Safari
+        - label: Microsoft Edge
+  - type: checkboxes
+    id: devices
+    attributes:
+      label: What device type(s) did you see the problem on?
+      options:
+        - label: "Desktop"
+        - label: "Mobile"
+        - label: "Tablet"
+  - type: checkboxes
+    id: operating-system
+    attributes:
+      label: "What operating system(s) did you see the problem on?"
+      options:
+        - label: "macOS"
+        - label: "Windows"
+        - label: "Linux"
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional information
+      description: Use this section to provide any additional information you may have like screenshots, logs, notes, video links, etc...

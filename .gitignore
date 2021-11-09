@@ -1,0 +1,22 @@
+
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+
+# yarn / eslint
+.yarn/cache
+.yarn/install-state.gz
+.yarn/build-state.yml
+.eslintcache
+
+# misc
+.DS_Store
+.env*
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

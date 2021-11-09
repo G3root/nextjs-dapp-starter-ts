@@ -1,0 +1,16 @@
+cache/
+artifacts/
+
+coverage*
+
+node_modules/
+.env
+!.env.example
+.yalc
+yalc.lock
+
+contractsInfo.json
+deployments/hardhat
+deployments/localhost
+
+/.dapp
