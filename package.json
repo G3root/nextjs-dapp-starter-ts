@@ -2,6 +2,19 @@
   "name": "nextjs-dapp-starter-ts",
   "packageManager": "yarn@3.1.0",
   "private": true,
+  "repository": "github:G3root/nextjs-dapp-starter-ts",
+  "author": "G3root",
+  "license": "MIT",
+  "keywords": [
+    "ethereum",
+    "smart-contracts",
+    "template",
+    "starter",
+    "hardhat",
+    "solidity",
+    "nextjs",
+    "typescript"
+  ],
   "scripts": {
     "dev": "yarn workspaces foreach -pi run dev",
     "build": "yarn workspaces foreach -t run build",
