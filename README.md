@@ -5,12 +5,16 @@ A monorepo boilerplate code for typesafe full-stack [Solidity](https://solidityl
 
 ## Contents
 
-- [Prerequisites](#prerequisites)
-- [Features](#features)
-- [Run Locally](#run-locally)
-- [Running Tests](#running-tests)
-- [Scripts](#scripts)
-- [Acknowledgements](#acknowledgements)
+- [full-stack dApp starter for solidity smart contract development](#full-stack-dapp-starter-for-solidity-smart-contract-development)
+  - [Contents](#contents)
+  - [Prerequisites](#prerequisites)
+  - [Features](#features)
+  - [Run in Gitpod](#run-in-gitpod)
+  - [Run Locally](#run-locally)
+  - [Running Tests](#running-tests)
+  - [Scripts](#scripts)
+  - [Acknowledgements](#acknowledgements)
+  - [License](#license)
 
 ## Prerequisites
 
@@ -35,6 +39,28 @@ Here's an overview of the included frameworks and tools.
 - **Mocha** - A feature-rich JavaScript test framework.
 - **Cypress** - A JavaScript End to End Testing Framework.
 - **React Testing Library** - Simple and complete React DOM testing utilities that encourage good testing practices.
+
+## Run in Gitpod
+To run this project in Gitpod, follow these steps:
+<br/>
+1. Click this link to deploy to gitpod
+<br/>
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/G3root/nextjs-dapp-starter-ts)
+
+2. Import the RPC address given to you by GitPod into your MetaMask wallet
+
+This endpoint will look something like this:
+
+```bash
+https://8545-copper-swordtail-j1mvhxv3.ws-eu18.gitpod.io/
+```
+
+The chain ID should be 1337. If you have a localhost rpc set up, you may need to overwrite it.
+![MetaMask RPC Import](wallet.png)
+
+you can also change your status of your open ports by going to port settings.
+![port settings](gitpod-port.png)
 
 ## Run Locally
 
