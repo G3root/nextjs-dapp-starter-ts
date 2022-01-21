@@ -1,6 +1,6 @@
 {
-  "name": "nextjs-dapp-starter-ts",
-  "packageManager": "yarn@3.1.0",
+  "name": "turborepo-basic-shared",
+  "version": "0.0.0",
   "private": true,
   "repository": "github:G3root/nextjs-dapp-starter-ts",
   "author": "G3root",
@@ -16,42 +16,43 @@
     "typescript"
   ],
   "scripts": {
-    "dev": "yarn workspaces foreach -pi run dev",
-    "build": "yarn workspaces foreach -t run build",
-    "lint": "yarn workspaces foreach -pi run lint",
-    "lint:fix": "yarn workspaces foreach -pi run lint:fix",
-    "format": "yarn workspaces foreach -pi run format",
-    "format:fix": "yarn workspaces foreach -pi run format:fix",
-    "test": "yarn workspaces foreach -pi run test",
-    "compile":"yarn workspace hardhat run compile",
-    "hardhat:build":"yarn workspace hardhat run build",
-    "deploy":"yarn workspace hardhat run deploy",
-    "void:deploy": "hardhat deploy",
-    "hardhat:test":"yarn workspace hardhat run test",
-    "gas":"yarn workspace hardhat run gas",
-    "hardhat:coverage":"yarn workspace hardhat run coverage",
-    "dev:zero":"yarn workspace hardhat run dev:zero",
-    "hardhat:dev":"yarn workspace hardhat run dev",
-    "local:dev":"yarn workspace hardhat run loacl:dev",
-    "execute":"yarn workspace hardhat run execute",
-    "export": "yarn workspace hardhat run export",
-    "fork:execute": "yarn workspace hardhat run fork:execute",
-    "fork:deploy": "yarn workspace hardhat run fork:deploy",
-    "fork:dev": "yarn workspace hardhat run fork:dev",
-    "fork:node": "yarn workspace hardhat run fork:node",
-    "fork:test": "yarn workspace hardhat run fork:test",
-    "start":"yarn workspace next-app run start",
-    "next:dev":"yarn workspace next-app run dev",
-    "next:test":"yarn workspace next-app run test",
-    "next:build":"yarn workspace next-app run build",
-    "e2e":"yarn workspace next-app run e2e",
-    "prepare": "yarn workspace hardhat run prepare"
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
-  "workspaces": [
-    "packages/*"
-  ],
   "devDependencies": {
-    "eslint": "^8.2.0",
-    "prettier": "^2.4.1"
+    "prettier": "^2.5.1",
+    "turbo": "latest",
+    "ts-node": "^10.4.0"
+  },
+  "turbo": {
+    "pipeline": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "outputs": [
+          ".next/**",
+          "artifacts/**",
+          "cache/**",
+          "typechain/**"
+        ]
+      },
+      "lint": {
+        "outputs": []
+      },
+      "lint:fix": {
+        "outputs": []
+      },
+      "dev": {
+        "cache": false
+      }
+    }
+  },
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=14.0.0"
   }
 }

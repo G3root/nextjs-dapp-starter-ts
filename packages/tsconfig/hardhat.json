@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "display": "hardhat",
+    "extends": "./base.json",
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "strict": true,
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "forceConsistentCasingInFileNames": true,
+        "outDir": "dist"
+      },
+      "include": [
+        "hardhat.config.ts",
+        "./scripts",
+        "./deploy",
+        "./test",
+        "typechain/**/*"
+      ],
+      "exclude": ["node_modules"]
+  }
+  

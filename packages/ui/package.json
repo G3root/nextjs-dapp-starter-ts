@@ -1,0 +1,22 @@
+{
+  "name": "ui",
+  "version": "0.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@headlessui/react": "^1.4.3",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "clsx": "^1.1.1",
+    "ethers": "^5.5.3",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.5.3",
+    "wagmi": "^0.1.7"
+  },
+  "peerDependencies": {
+    "@headlessui/react": "^1.4.3",
+    "ethers": "^5.5.3",
+    "wagmi": "^0.1.7"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "web",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.4.3",
+    "ethers": "^5.5.3",
+    "next": "12.0.7",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "ui": "workspace:*",
+    "wagmi": "^0.1.7"
+  },
+  "devDependencies": {
+    "@ethersproject/abi": "^5.5.0",
+    "@ethersproject/providers": "^5.5.2",
+    "@types/react": "17.0.37",
+    "autoprefixer": "^10.4.0",
+    "config": "workspace:*",
+    "eslint": "7.32.0",
+    "next-transpile-modules": "9.0.0",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.5",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.5.3"
+  }
+}
